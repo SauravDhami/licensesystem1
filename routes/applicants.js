@@ -12,10 +12,14 @@ const licenseRegistrationsRoutes = require('./licenseRegistrations');
 
 // * image upload
 const FILE_TYPE_MAP = {
-    'image/png': 'png',
-    'image/jpeg': 'jpeg',
-    'image/jpg': 'jpg',
+    // 'image/png': 'png',
+    // 'image/jpeg': 'jpeg',
+    // 'image/jpg': 'jpg',
+    'image/*':'*'
+    
 };
+
+
 
 
 const storage = multer.diskStorage({
