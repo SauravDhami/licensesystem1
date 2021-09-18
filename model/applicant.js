@@ -20,7 +20,8 @@ const applicantSchema = mongoose.Schema({
 
    citizenshipNumber: {
       type: String,
-      required: true
+      required: true,
+      unique: true
     },
 
    applicantAddress: {
