@@ -12,10 +12,10 @@ const licenseRegistrationsRoutes = require('./licenseRegistrations');
 
 // * image upload
 const FILE_TYPE_MAP = {
-    // 'image/png': 'png',
-    // 'image/jpeg': 'jpeg',
-    // 'image/jpg': 'jpg',
-    'image/*':'*'
+    'image/png': 'png',
+    'image/jpeg': 'jpeg',
+    'image/jpg': 'jpg',
+    
     
 };
 
