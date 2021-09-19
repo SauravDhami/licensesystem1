@@ -11,6 +11,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const port = process.env.PORT;
 const api = process.env.API_URL;
+const path = require('path');
 
 const AppError = require('./helpers/appError');
 const globalErrorHandler = require('./controllers/errorController');
