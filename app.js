@@ -41,13 +41,8 @@ app.use('/api', limiter);
 
 
 //? serving static files
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/')));
-
-    // app.get('*', (req, res) => {
-    //     res.sendFile(path.resolve(__dirname, '/build', 'index.html'));
-    // });
-}
+//? serving static files
+app.use('/', express.static(path.join(__dirname, `/`)));
 
 
 //? data sanitization against NoSQL query injection
