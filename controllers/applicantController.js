@@ -62,7 +62,8 @@ exports.addApplicant = catchAsync(async (req, res, next) => {
     if (!file) return res.status(400).send('No image in the request');
 
     const fileName = file.filename;
-    const basePath = `${req.protocol}://${req.get('host')}/public/uploads/`;
+    //const basePath = `${req.protocol}://${req.get('host')}/public/uploads/`;
+    const basePath = `https://${req.get('host')}/public/uploads/`;
 
 
 
